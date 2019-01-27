@@ -1,0 +1,107 @@
+{
+    "mappings": {
+        "listing": {
+            "properties": {
+                "availability_365": {
+                    "type": "integer"
+                },
+                "calculated_host_listings_count": {
+                    "type": "integer"
+                },
+                "host_id": {
+                    "type": "keyword"
+                },
+                "host_name": {
+                    "type": "keyword"
+                },
+                "id": {
+                    "type": "keyword"
+                },
+                "last_review": {
+                    "type": "date"
+                },
+                "location": {
+                    "type": "geo_point"
+                },
+                "minimum_nights": {
+                    "type": "integer"
+                },
+                "name": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "neighbourhood": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "neighbourhood_group": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "number_of_reviews": {
+                    "type": "integer"
+                },
+                "price": {
+                    "type": "integer"
+                },
+                "reviews_per_month": {
+                    "type": "integer"
+                },
+                "room_type": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "city": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "accomodates": {
+                    "type": "integer"
+                },
+                "property_type": {
+                    "type": "text",
+                    "fields": {
+                        "keyword": {
+                            "type": "keyword",
+                            "ignore_above": 256
+                        }
+                    }
+                },
+                "summary": {
+                    "type": "text"
+                },
+                "listing_review_score": {
+                    "type": "integer"
+                },
+                "listing_review_score_normalized": {
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}
